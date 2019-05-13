@@ -694,7 +694,7 @@ func resourceArmKubernetesClusterRead(d *schema.ResourceData, meta interface{}) 
 		}
 
 		// adminProfile is only available for RBAC enabled clusters with AAD
-		if props.AadProfile != nil {
+		if props.EnableRBAC {
 			adminProfile, err := client.GetAccessProfile(ctx, resGroup, name, "clusterAdmin")
 			if err != nil {
 				return fmt.Errorf("Error retrieving Admin Access Profile for Managed Kubernetes Cluster %q (Resource Group %q): %+v", name, resGroup, err)
