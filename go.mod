@@ -19,7 +19,7 @@ require (
 	github.com/tombuildsstuff/giovanni v0.6.0
 	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
 	golang.org/x/net v0.0.0-20190502183928-7f726cade0ab
-	gopkg.in/yaml.v2 v2.2.2
+	gopkg.in/yaml.v2 v2.2.8
 )
 
 go 1.13
